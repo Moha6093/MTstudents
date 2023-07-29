@@ -3,7 +3,7 @@ import openpyxl
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST', 'PUT'])
 def index():
     if request.method == 'POST':
         # Get the form data
